@@ -20,6 +20,7 @@ module.exports = {
       boxShadow: {
         boxShadow1: "2px 2px 16px 0px rgba(159, 147, 237, 255)",
       },
+      classes: {},
 
       colors: {
         border: "hsl(var(--border))",
@@ -75,6 +76,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // typewriter: "typewriter 2s steps(11) forwards",
       },
     },
   },

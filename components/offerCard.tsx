@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "./offercard.module.css";
 
-("@mui/icons-material");
 interface inputProps extends React.ComponentProps<any> {
   line1: string;
   line2?: string;
