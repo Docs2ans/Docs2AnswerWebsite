@@ -10,9 +10,8 @@ export default function Banner() {
       </h1>
 
       <h3 className="text-center text-5xl text-slate-700 leading-[54px]">
-        {" "}
         Transform all your docs <br />
-        into a  LLM powered Chatbot
+        into a LLM powered Chatbot
       </h3>
     </div>
   );
