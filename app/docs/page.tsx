@@ -5,8 +5,8 @@ export default function Docs() {
   return (
     <div className="flex flex-col gap-5 p-4 ">
       <div className="flex flex-col gap-6 ">
-        <h1 className=" font-semibold text-5xl">Introduction</h1>
-        <Separator />
+        {/* <h1 className=" font-semibold text-5xl">Introduction</h1>
+        <Separator /> */}
         <h1 className=" text-[42px] font-bold">
           What is Docs2
           {/* <span className="bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent bg-clip-text"> */}
@@ -14,16 +14,20 @@ export default function Docs() {
           {/* </span>{" "} */}?
         </h1>
         <div className="flex-col gap-3">
-          <p className=" text-2xl text-balance text-gray-700">
-            Docs2Answer is an simple library for you to create your own
-            personalised chatbot trained on your personalised documents .
+          <p className=" text-2xl text-balance ">
+            Docs2Answer is an advanced natural language processing (NLP) project
+            designed to revolutionize the way users interact with documentation.
+            Leveraging cutting-edge language models, specifically Large Language
+            Models (LLM), Docs2Answer transforms static documentation into a
+            dynamic and interactive conversational experience. Now, users can
+            effortlessly obtain information and answers to their queries by
+            engaging in a conversation with their personal Docs bot.
           </p>
-
         </div>
       </div>
       <div className="flex flex-col gap-5">
-        <h1 className="font-semibold text-5xl">Installation</h1>
-        <Separator className=" w-3/5" />
+        {/* <h1 className="font-semibold text-5xl">Installation</h1>
+        <Separator className=" w-3/5" /> */}
 
         <div
           style={{
@@ -33,11 +37,8 @@ export default function Docs() {
             paddingLeft: "24px",
           }}
         >
-          <h2 className=" text-4xl font-semibold pl-">Client</h2>
-          <p
-            style={{ fontSize: "24px" }}
-            className="text-balance text-gray-700 pl-6"
-          >
+          <h2 className=" text-4xl font-semibold ">Client</h2>
+          <p style={{ fontSize: "24px" }} className="text-balance  pl-6">
             {" "}
             Embedding chatbot in your react / Next project is simple through our
             docs2Answer Chatbot package .
@@ -59,32 +60,53 @@ export default function Docs() {
           <h2 className="text-3xl font-semibold">Usage</h2>
           <div className={styles.codeDiv}>
             <code className="text-gray-700" style={{ fontSize: "24px" }}>
-              {`<Chatbot url="server.url.com"/>`}
+              {'<Chatbot url="server.url.com"/>'}
 
               <br></br>
             </code>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4">
           <h2 className="text-4xl font-semibold"> Server</h2>
+          <ul className="text-2xl flex flex-col gap-3 pl-6">
+            <li>
+              1.DocBot utilizes state-of-the-art Large Language Models to
+              comprehend and respond to user queries with high accuracy,
+              providing a more natural and intuitive interaction.
+            </li>
+            <li>
+              2.The system processes and comprehends extensive documentation,
+              allowing users to extract relevant information through
+              context-aware conversations.
+            </li>
+            <li>
+              3.DocBot generates dynamic responses, adapting to the user's
+              questions and providing detailed explanations, examples, or
+              references within the documentation.
+            </li>
+          </ul>
           <div className=" pl-6 flex flex-col gap-4">
             <h2 className=" text-3xl font-semibold">Prequsites</h2>
             <p className=" text-2xl pl-5">
               {" "}
-              You need python version 3.10.0 to run this
+              Python version <u>3.10.0</u> needed to run this
             </p>
             <div className=" flex flex-col gap-3">
-              <h2 className=" text-3xl font-semibold">Cloning</h2>
+              <h2 className=" text-3xl font-semibold">Cloning Repository</h2>
               <p className=" text-2xl pl-5">
                 {" "}
-                We had seprate Repository for Pdf files and Markdown files
+                We have seprate Repository for traning Pdf files and Markdown
+                files
               </p>
               <ul className="text-2xl pl-6 flex flex-col gap-4">
                 <li>
                   <p className="text-2xl">
                     <span className="text-2xl font-bold">
-                      <a href="https://github.com/Docs2ans/Markdown-Bot">
-                       <u> Markdown-Bot</u>
+                      <a
+                        href="https://github.com/Docs2ans/Markdown-Bot"
+                        target=" blank"
+                      >
+                        <u> Markdown-Bot</u>
                       </a>
                     </span>{" "}
                     for markdown files
@@ -93,7 +115,12 @@ export default function Docs() {
                 <li>
                   <p className="text-2xl">
                     <span className="text-2xl font-bold">
-                      <a href="https://github.com/Docs2ans/PDF-Bot"><u>PDF-bot</u></a>
+                      <a
+                        href="https://github.com/Docs2ans/PDF-Bot"
+                        target=" blank"
+                      >
+                        <u>PDF-bot</u>
+                      </a>
                     </span>{" "}
                     for PDF files
                   </p>
@@ -106,19 +133,24 @@ export default function Docs() {
               </h2>
               <p className=" text-2xl pl-5">
                 {" "}
-                <a href="https://huggingface.co/MBZUAI/LaMini-Flan-T5-783M/blob/main/pytorch_model.bin">
+                <a
+                  href="https://huggingface.co/MBZUAI/LaMini-Flan-T5-783M/blob/main/pytorch_model.bin"
+                  target=" blank"
+                >
                   <u>Link</u>
                 </a>
                 <br />
-                Download file from above link and paste to /LaMini-T5-738M/
+                Download file from above link in /LaMini-T5-738M/
               </p>
             </div>
             <div>
-              <h2 className=" text-3xl font-semibold"> Creating docs and db folder</h2>
-              <p className=" text-2xl pl-5">
-                Create empty folder docs and db in the bot and add docs into
-                docs folder
-              </p>
+              <h2 className=" text-3xl font-semibold"> Directory Creation</h2>
+
+              <ul className="flex flex-col gap-2  text-2xl pl-5">
+                <li>Creating db folder</li>
+                <li>Creating docs folder</li>
+                <li>Place your documents within the docs folder</li>
+              </ul>
             </div>
             <div>
               <h2 className=" text-3xl font-semibold">
@@ -128,14 +160,16 @@ export default function Docs() {
                 To create vector embeddings by running injest.py
               </p>
               <div className={`${styles.codeDiv}  pl-7`}>
-                <code className="text-2xl pl-6">python ingest.py</code>
+                <code className="text-2xl pl-6 text-gray-700">
+                  python ingest.py
+                </code>
               </div>
             </div>
             <div>
               <h2 className=" text-3xl font-semibold">Start the Server</h2>
               <p className=" text-2xl pl-5">To start uvicorn server</p>
               <div className={`${styles.codeDiv}  pl-7`}>
-                <code className="text-2xl pl-6">
+                <code className="text-2xl pl-6 text-gray-700">
                   uvicorn server:app --reload
                 </code>
               </div>
