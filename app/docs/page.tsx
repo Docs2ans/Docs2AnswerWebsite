@@ -24,7 +24,7 @@ export default function Docs() {
 
         <div className="flex flex-col gap-3 pl-6">
           <h2 className=" text-5xl font-semibold ">Client</h2>
-          <p style={{ fontSize: "24px" }} className="text-balance  pl-6">
+          <p className="text-balance text-2xl pl-6">
             {" "}
             Embedding chatbot in your react / Next project is simple through our
             docs2Answer Chatbot package .
