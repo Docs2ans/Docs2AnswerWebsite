@@ -32,6 +32,9 @@
     .cardContainer {
       flex-direction: column;
     }
+    .contentDiv{
+      gap:16px;
+    }
     .imgDiv {
       height: 100;
       width: 50px;

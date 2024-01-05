@@ -9,12 +9,12 @@ interface inputProps extends React.ComponentProps<any> {
 
 export default function OfferCard({ line1, line2 }: inputProps) {
   return (
-    <div className=" min-w-[350px] min-h-[400px] rounded-xl justify-center align-middle  bg-whitePrimary shadow-boxShadow1 flex flex-col   ">
+    <div className="lg:min-w-[350px] lg:min-h-[400px] text-center rounded-xl justify-center align-middle  bg-whitePrimary shadow-boxShadow1 flex flex-col   ">
       {/* <AbcOutlined /> */}
-      <div className={styles.contentDiv}>
+      <div className={`flex flex-col min-h-44 min-w-36 text-center align-middle justify-center`}>
         {/* <Heading size="md" color="var(--purple-4)"> */}
         {/* {title} */}
-        <h1 className="font-bold text-purple-700  text-4xl">
+        <h1 className="font-bold text-purple-700  text-center lg:text-4xl sm:text-3xl">
           {" "}
           {line1}
           <br />

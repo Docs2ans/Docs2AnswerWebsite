@@ -72,11 +72,30 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        glower: {
+          "0%": {
+            backgroundPosition: "100% 50%",
+            // "background-position": "100% 50%",
+          },
+          "25%": {
+            backgroundPosition: "50% 100%",
+          },
+          "50%": {
+            backgroundPosition: "0 50%",
+          },
+          "75%": {
+            backgroundPosition: "50% 0",
+          },
+          "100%": {
+            backgroundPosition: "100% 50%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         // typewriter: "typewriter 2s steps(11) forwards",
+        // bulb: "8s linear 0s infinite normal none running glower",
       },
     },
   },
