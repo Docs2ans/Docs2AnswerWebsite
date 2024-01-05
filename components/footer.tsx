@@ -18,7 +18,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
+            <div >
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Follow us
               </h2>
@@ -31,12 +31,20 @@ export default function Footer() {
                     Github
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="https://twitter.com/Docs2A"
                     className="hover:underline"
                   >
-                    Discord
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/docs2answer/"
+                    className="hover:underline"
+                  >
+                    Linkedin
                   </a>
                 </li>
               </ul>
