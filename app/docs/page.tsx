@@ -30,27 +30,36 @@ export default function Docs() {
             docs2Answer Chatbot package .
           </p>
 
-          <div className={styles.codeDiv}>
-            <code className="text-gray-700" style={{ fontSize: "24px" }}>
-              npm i docs2anschatbot
-              <br></br>
-            </code>
-          </div>
-          <h2 className="text-3xl font-semibold">Importing component</h2>
-          <div className={styles.codeDiv}>
-            <code className="text-gray-700 pl-6" style={{ fontSize: "24px" }}>
-              {`import {Chatbot} from 'docs2anschatbot'`}
-              <br></br>
-            </code>
-          </div>
-          <h2 className="text-3xl font-semibold">Usage</h2>
-          <div className={styles.codeDiv}>
-            <code className="text-gray-700" style={{ fontSize: "24px" }}>
-              {'<Chatbot url="server.url.com"/>'}
+          <code
+            className="bg-[#1d1f21] text-2xl max-w-max ml-6"
+            style={{ fontSize: "24px" }}
+          >
+            <span className="text-[#f0c674]">npm</span>
+            <span className="text-gray-50"> install docs2anschatbot</span>
+            <br></br>
+          </code>
 
-              <br></br>
-            </code>
-          </div>
+          <h2 className="text-3xl font-semibold">Importing component</h2>
+          {/* <div className="max-w-max"> */}
+          <code className="bg-[#1d1f21] text-2xl max-w-max ml-6 ">
+            {/* {`import {Chatbot} from 'docs2anschatbot'`} */}
+            <span className="text-[#b294bb]">import</span>{" "}
+            <span className="text-[#cc6666]">{"{chatbot}"}</span>
+            <span className="text-[#b294bb]">from</span>{" "}
+            <span className="text-[#f0c674]">&apos;docs2answer&apos;</span>
+            <br></br>
+          </code>
+          {/* </div> */}
+          <h2 className="text-3xl font-semibold">Usage</h2>
+
+          <code
+            className="bg-[#1d1f21] min-h-max text-[#cc6666] text-2xl max-w-max ml-6"
+            style={{ fontSize: "24px" }}
+          >
+            {'<Chatbot url="server.url.com"/>'}
+
+            <br></br>
+          </code>
         </div>
         <div className="flex flex-col gap-4 pl-6">
           <h2 className="text-5xl font-semibold"> Server</h2>
@@ -66,7 +75,7 @@ export default function Docs() {
               context-aware conversations.
             </li>
             <li>
-              3.DocBot generates dynamic responses, adapting to the user's
+              3.DocBot generates dynamic responses, adapting to the user&apos;s
               questions and providing detailed explanations, examples, or
               references within the documentation.
             </li>
@@ -103,7 +112,7 @@ export default function Docs() {
                     <span className="text-2xl font-bold">
                       <a
                         href="https://github.com/Docs2ans/PDF-Bot"
-                        target=" blank"
+                        target="blank"
                       >
                         <u>PDF-bot</u>
                       </a>
@@ -145,20 +154,20 @@ export default function Docs() {
               <p className=" text-xl pl-5">
                 To create vector embeddings by running injest.py
               </p>
-              <div className={`${styles.codeDiv}  pl-7`}>
-                <code className="text-2xl pl-6 text-gray-700">
-                  python ingest.py
-                </code>
-              </div>
+
+              <code className="bg-[#1d1f21] text-2xl text-gray-50 max-w-max ml-6 ">
+                <span className="text-[#f0c674]">python</span>{" "}
+                <span className="text-gray-50"></span>injest.py
+              </code>
             </div>
             <div>
               <h2 className=" text-3xl font-semibold">Start the Server</h2>
               <p className=" text-xl pl-5">To start uvicorn server</p>
-              <div className={`${styles.codeDiv}  pl-7`}>
-                <code className="text-2xl pl-6 text-gray-700">
-                  uvicorn server:app --reload
-                </code>
-              </div>
+
+              <code className="bg-[#1d1f21] text-2xl max-w-max ml-6 text-gray-50">
+                <span className="text-[#f0c674]">uvicorn</span> server:app
+                --reload
+              </code>
             </div>
           </div>
         </div>
