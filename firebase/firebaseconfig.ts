@@ -7,14 +7,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCG8NutA5mdsxmn3ttytj0Qw3_AkACqFBs",
-  authDomain: "docs2answer.firebaseapp.com",
-  projectId: "docs2answer",
-  storageBucket: "docs2answer.appspot.com",
-  messagingSenderId: "255791917509",
-  appId: "1:255791917509:web:b9c2c1d3a85f8daa5d83ac",
+  apiKey: process.env.NEXT_PUBLIC_apiKey,
+  authDomain: process.env.NEXT_PUBLIC_authDomain,
+  projectId: process.env.NEXT_PUBLIC_projectId,
+  storageBucket: process.env.NEXT_PUBLIC_storageBucket,
+  messagingSenderId: process.env.NEXT_PUBLIC_messagingSenderId,
+  appId: process.env.NEXT_PUBLIC_appId,
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);

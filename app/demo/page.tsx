@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useToast } from "@/components/ui/use-toast";
 import db from "@/firebase/firebaseconfig";
 import { Timestamp, doc, setDoc } from "firebase/firestore";
@@ -14,7 +14,9 @@ interface formData {
   mobile: string;
 }
 export default function Demo() {
+ 
   const { toast } = useToast();
+
   const sucessToast = () => {
     console.log("toast");
     return toast({

@@ -1,7 +1,8 @@
-"use client";
+
 import { Separator } from "@/components/ui/separator";
 import styles from "./page.module.css";
 export default function Docs() {
+
   return (
     <div className="flex flex-col gap-5 p-4 ">
       {/* <div className="flex flex-col gap-2 ">
