@@ -36,9 +36,9 @@ export default function Navbar({ children }: React.PropsWithChildren) {
                 <h2 className=" hover:text-black ">Demo</h2>
               </NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <h2 className="  hover:text-black">Pricing</h2>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
           </NavigationMenuList>
         </NavigationMenu>
       </div>
