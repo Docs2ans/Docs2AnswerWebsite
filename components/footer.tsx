@@ -1,16 +1,19 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto w-[100%] border-t-2 p-2 py-6 lg:py-8 ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="/" className="flex items-center">
+            <a href="/" className="flex items-center justify-center align-middle">
               <img
                 src="/logo.png"
                 className="h-8 me-3"
                 alt="Docs2Answer Logo"
+                style={{scale:"3"}}
               />
               <span className="self-center lg:text-3xl sm:text-xl font-semibold whitespace-nowrap dark:text-white">
                 Docs2Answer
